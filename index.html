@@ -8,19 +8,20 @@
   <style>
     body {
       background: #ccc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #flipbook {
       width: 1200px;
       height: 800px;
     }
     #flipbook .page {
-      width: 100%;
-      height: 100%;
+      width: 600px;      /* Half of flipbook width */
+      height: 800px;
+      position: absolute;/* Required for proper layering */
       background: white;
     }
     #flipbook .page img {
@@ -50,7 +51,12 @@
       width: 1200,
       height: 800,
       autoCenter: true,
-      display: 'double',   // two pages side-by-side
-      acceleration: true,  // smoother animation
+      display: 'double',
       gradients: true,
-      elevation:
+      elevation: 50
+    });
+  });
+</script>
+
+</body>
+</html>
