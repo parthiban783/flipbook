@@ -8,21 +8,20 @@
   <style>
     body {
       background: #ccc;
-      margin: 0;
-      height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
     #flipbook {
       width: 1200px;
       height: 800px;
     }
     #flipbook .page {
-      width: 600px;
+      width: 600px; /* half of flipbook width */
       height: 800px;
-      position: absolute;
-      background: white;
+      position: relative;
     }
     #flipbook .page img {
       width: 100%;
@@ -32,29 +31,29 @@
   </style>
 </head>
 <body>
-  <div id="flipbook">
-    <div class="page"><img src="image1.jpg"></div>
-    <div class="page"><img src="image2.jpg"></div>
-    <div class="page"><img src="image3.jpg"></div>
-    <div class="page"><img src="image4.jpg"></div>
-    <div class="page"><img src="image5.jpg"></div>
-    <div class="page"><img src="image6.jpg"></div>
-    <div class="page"><img src="image7.jpg"></div>
-    <div class="page"><img src="image8.jpg"></div>
-    <div class="page"><img src="image9.jpg"></div>
-  </div>
 
-  <script>
-    $(document).ready(function(){
-      $("#flipbook").turn({
-        width: 1200,
-        height: 800,
-        autoCenter: true,
-        display: 'double',
-        gradients: true,
-        elevation: 50
-      });
-    });
-  </script>
+<div id="flipbook">
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(1).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(2).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(3).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(4).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(5).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(6).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(7).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(8).jpg"></div>
+  <div class="page"><img src="https://raw.githubusercontent.com/parthiban783/flipbook/main/image%20(9).jpg"></div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#flipbook").turn({
+    width: 1200,
+    height: 800,
+    autoCenter: true,
+    display: 'double'
+  });
+});
+</script>
+
 </body>
 </html>
