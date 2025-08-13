@@ -19,9 +19,9 @@
       height: 800px;
     }
     #flipbook .page {
-      width: 600px;      /* Half of flipbook width */
+      width: 600px;
       height: 800px;
-      position: absolute;/* Required for proper layering */
+      position: absolute;
       background: white;
     }
     #flipbook .page img {
@@ -32,31 +32,29 @@
   </style>
 </head>
 <body>
+  <div id="flipbook">
+    <div class="page"><img src="image1.jpg"></div>
+    <div class="page"><img src="image2.jpg"></div>
+    <div class="page"><img src="image3.jpg"></div>
+    <div class="page"><img src="image4.jpg"></div>
+    <div class="page"><img src="image5.jpg"></div>
+    <div class="page"><img src="image6.jpg"></div>
+    <div class="page"><img src="image7.jpg"></div>
+    <div class="page"><img src="image8.jpg"></div>
+    <div class="page"><img src="image9.jpg"></div>
+  </div>
 
-<div id="flipbook">
-  <div class="page"><img src="image (1).jpg"></div>
-  <div class="page"><img src="image (2).jpg"></div>
-  <div class="page"><img src="image (3).jpg"></div>
-  <div class="page"><img src="image (4).jpg"></div>
-  <div class="page"><img src="image (5).jpg"></div>
-  <div class="page"><img src="image (6).jpg"></div>
-  <div class="page"><img src="image (7).jpg"></div>
-  <div class="page"><img src="image (8).jpg"></div>
-  <div class="page"><img src="image (9).jpg"></div>
-</div>
-
-<script>
-  $(document).ready(function(){
-    $("#flipbook").turn({
-      width: 1200,
-      height: 800,
-      autoCenter: true,
-      display: 'double',
-      gradients: true,
-      elevation: 50
+  <script>
+    $(document).ready(function(){
+      $("#flipbook").turn({
+        width: 1200,
+        height: 800,
+        autoCenter: true,
+        display: 'double',
+        gradients: true,
+        elevation: 50
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
